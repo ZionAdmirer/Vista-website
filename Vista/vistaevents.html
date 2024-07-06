@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista - Events and Calendars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #007bff;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      margin-left: 2rem;
+    }
+
+    .nav-menu a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: #007bff;
+    }
+
+    .hero {
+      background-color: #007bff;
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .hero h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .events {
+      padding: 5rem 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .events h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 3rem;
+    }
+
+    .events-item {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .events-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .events-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+    .events-item h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .events-item p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .events-item a {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .events-item a:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Vista</a>
+    <nav>
+      <ul class="nav-menu">
+        <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Organize and Attend Events on Vista</h1>
+      <p>Create, share, and RSVP to events with your network.</p>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div class="events-grid">
+        <div class="events-item">
+          <img src="event1.jpg" alt="Event Image">
+          <h3>Tech Meetup</h3>
+          <p>Join fellow tech enthusiasts for an evening of networking and discussions.</p>
+          <a href="#">RSVP</a>
+        </div>
+        <div class="events-item">
+          <img src="event2.jpg" alt="Event Image">
+          <h3>Cooking Class</h3>
+          <p>Learn new culinary skills and recipes from a renowned chef.</p>
+          <a href="#">RSVP</a>
+        </div>
+        <div class="events-item">
+          <img src="event3.jpg" alt="Event Image">
+          <h3>Outdoor Adventure</h3>
+          <p>Explore the great outdoors with a group of like-minded adventurers.</p>
+          <a href="#">RSVP</a>
+        </div>
+        <div class="events-item">
+          <img src="event4.jpg" alt="Event Image">
+          <h3>Book Club Meetup</h3>
+          <p>Discuss the latest literary masterpieces with fellow book lovers.</p>
+          <a href="#">RSVP</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Vista. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista - Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #007bff;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      margin-left: 2rem;
+    }
+
+    .nav-menu a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: #007bff;
+    }
+
+    .hero {
+      background-color: #007bff;
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .hero h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      padding: 5rem 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .features h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 3rem;
+    }
+
+    .feature-item {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-item i {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-item h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .feature-item p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .feature-item a {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-item a:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Vista</a>
+    <nav>
+      <ul class="nav-menu">
+        <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Discover Vista's Powerful Features</h1>
+      <p>Explore the features that make Vista the ultimate social networking platform.</p>
+    </section>
+
+    <section class="features">
+      <h2>Key Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <i class="fas fa-users"></i>
+          <h3>Connect with Friends</h3>
+          <p>Build your network and stay connected with friends and family. Easily find and follow people with similar interests.</p>
+          <a href="vistaconnectwithfriends.html">Learn More</a>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-share-alt"></i>
+          <h3>Share Your Life</h3>
+          <p>Share your thoughts, photos, and experiences with your network. Express yourself through posts, stories, and live streams.</p>
+          <a href="vistasharelifestories.html">Explore Sharing</a>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-comments"></i>
+          <h3>Engage in Discussions</h3>
+          <p>Join conversations, participate in groups, and express your views. Engage with your network through comments, likes, and shares.</p>
+          <a href="vistaengageindiscussion.html">Join Discussions</a>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-chart-line"></i>
+          <h3>Discover Trending Content</h3>
+          <p>Stay up-to-date with the latest trends and popular content. Discover new interests and engage with viral posts.</p>
+          <a href="vistadiscovertrending.html">Explore Trending</a>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Events and Calendars</h3>
+          <p>Organize and attend events with your network. Create and share event details, RSVP, and stay informed about upcoming events.</p>
+          <a href="vistaevents.html">Manage Events</a>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Marketplace</h3>
+          <p>Buy and sell items within your network. Easily list products, browse listings, and connect with buyers and sellers.</p>
+          <a href="vistamarketplace.html">Visit Marketplace</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Vista. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
